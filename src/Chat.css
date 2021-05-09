@@ -1,0 +1,95 @@
+.Chat {
+    text-align: right;
+    background-color: transparent;
+    min-height: 100vh;
+    justify-content: center;
+    display: flex;
+
+  }
+  
+  .react-chatbot-kit-chat-container {
+    width: 500px;
+    position: absolute;
+    top:20%;
+    left:35%;
+    
+  }
+  
+  .react-chatbot-kit-chat-bot-message{
+    margin-left: 0;
+  }
+
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap');
+
+html, body {
+  margin: 0;
+  min-height: 100vh;
+  padding: 0;
+}
+
+body {
+  background: #6155a6;
+  background: linear-gradient(to right, #ffabe1, #a685e2, #6155a6);
+  position: relative;
+  text-align: center;
+}
+
+#hide {
+  background: none;
+  border: 0;
+  box-sizing: border-box;
+  color: transparent;
+  cursor: pointer;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 12px;
+  left: 50%;
+  padding: 10px;
+  letter-spacing: 1.5px;
+  line-height: 15px;
+  outline: none;
+  overflow: hidden;
+  position: absolute;
+  justify-content: center;
+  text-transform: uppercase;
+  transform: translate(-50%, -50%);
+  transition: all 0.2s ease-in;
+  width: 100px;
+  top:16%;
+  left:70%;
+}
+
+#hide::before,
+#hide::after {
+  background-color: white;
+  content: '';
+  display: block;
+  height: 1px;
+  left: 0;
+  position: absolute;
+  transform-origin: center left;
+  transition: all 0.2s ease-in;
+  width: 141.4214px;
+  z-index: -1;
+}
+
+#hide::before {
+  top: 0;
+  transform: rotate(45deg);
+}
+
+#hide::after {
+  bottom: 0;
+  transform: rotate(-45deg);
+}
+
+#hide:hover {
+  color: #8A2387;
+}
+
+#hide:hover::before,
+#hide:hover::after {
+  height: 50px;
+  transform: rotate(0deg);
+}
+
+  
